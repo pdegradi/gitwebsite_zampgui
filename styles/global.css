@@ -1,0 +1,35 @@
+/* ----------------------------------------- */
+/* SOVRASCRITTURA Bootstrap base ----------- */
+/* Font size base (Bootstrap default è 16px) */
+/* ----------------------------------------- */
+html {
+  scrollbar-gutter: stable; /* KEVIN */
+}
+body {
+  font-size: 20px;
+  
+  /* se il body ha 3 elementi (nav, main, footer) e voglio che il footer stia sempre in fondo */
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* style del codice definito come pre > code */
+pre:has(code)
+{
+	border-radius: .5rem;
+	background-color: var(--bs-tertiary-bg);
+	padding:1.5rem 1rem 1.5rem 1rem;
+}
+
+
+/* Logo centrato */
+.site-logo {max-width: 180px;height: auto;}
+
+/* Screenshot e immagini contenuto */
+.content-img {max-width: 100%;height: auto;border-radius: 0.5rem;}
+
+/* Griglia componenti inclusi */
+.component-card {text-align: center;text-decoration: none;border: solid 1px var(--bs-secondary-border-subtle);}
+.component-card:hover {border:solid 1px #0d6efd;}
+.component-card img {width: 72px;height: 72px;object-fit: contain;margin-bottom: 0.3rem;}
